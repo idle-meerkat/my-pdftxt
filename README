@@ -1,0 +1,10 @@
+PDFTXT
+======
+
+pdftxt is a simple wrapper around mupdf library to extract
+text from pdf files.  Each line of the output is prefixed
+with its page number; this is convenient when searching in
+pdf files.  A script containing the following line can be
+used to grep through pdf files.
+
+  pdftxt "$2" | grep "$1"
